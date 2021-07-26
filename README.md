@@ -1,6 +1,7 @@
 In one week we created a mock-up Social Media App named Motion.
 
-Front-end Framework/Library:
+# Front-end Framework/Library:
+```
 * React.
 
 Fetching:
@@ -24,15 +25,17 @@ Routing:
 
 Tools:
 * Polished (pixels convertion to rem)
+```
 
 
-Backend:
+# Backend:
+```
 Django.
+```
 
-
-ENDPOINTS:
-
-Posts
+# ENDPOINTS:
+```
+# Posts
 
 /backend/api/social/posts/ POST: user can make a new post by sending post data
 /backend/api/social/posts/ GET: lists all the posts of all users in chronological order
@@ -44,7 +47,7 @@ Posts
 /backend/api/social/posts/following/ GET: the list of the posts from users that the current user is following
 /backend/api/social/posts/user/<int:user_id> GET: the list of all posts from a given user in chronological order
 
-Users
+# Users
 
 /backend/api/users/ GET: Get all the users
 /backend/api/social/followers/toggle-follow/<int:user_id>/ POST: toggle follow/unfollow a user
@@ -52,14 +55,14 @@ Users
 /backend/api/social/followers/following/ GET: list of all the people the user is following
 
 
-Follow
+# Follow
 
 /api/social/toggle-follow/<int:user_id>/ POST: Toggle following a user
 /api/social/followers/followers/ GET: List of all the logged in user’s followers
 /api/social/followers/following/ GET: List of all the users the user is following
 
 
-Friends
+# Friends
 
 /api/social/friends/request/<int:user_id>/ POST: Send friend request to another user
 /api/social/friends/requests/<int:friend_request_id>/ GET,PATCH,DELETE: Get Update (Accept, Reject) or Delete an open friend request
@@ -67,6 +70,7 @@ Friends
 /api/social/friends/ GET: List all accepted friends¨
 
 
-Comments
+# Comments
 
 /api/social/comments/<int:post_id>/ GET, POST: Create new post or get all comments of a post.
+```
