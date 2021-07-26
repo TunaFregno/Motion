@@ -50,3 +50,23 @@ Users
 /backend/api/social/followers/toggle-follow/<int:user_id>/ POST: toggle follow/unfollow a user
 /backend/api/social/followers/followers/ GET: list of all the followers
 /backend/api/social/followers/following/ GET: list of all the people the user is following
+
+
+Follow
+
+/api/social/toggle-follow/<int:user_id>/ POST: Toggle following a user
+/api/social/followers/followers/ GET: List of all the logged in user’s followers
+/api/social/followers/following/ GET: List of all the users the user is following
+
+
+Friends
+
+/api/social/friends/request/<int:user_id>/ POST: Send friend request to another user
+/api/social/friends/requests/<int:friend_request_id>/ GET,PATCH,DELETE: Get Update (Accept, Reject) or Delete an open friend request
+/api/social/friends/requests/?status=<str:status> GET: List of all friend requests logged in user is in  filtered by status
+/api/social/friends/ GET: List all accepted friends¨
+
+
+Comments
+
+/api/social/comments/<int:post_id>/ GET, POST: Create new post or get all comments of a post.
